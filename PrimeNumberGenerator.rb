@@ -1,6 +1,3 @@
-
-#find_prime(start_num,end_num)
-
 module PrimeNumberGenerator 
 def generate(startingValue,endingValue)
   result = Array.new
@@ -40,10 +37,8 @@ class PrimeNumberCollection
   puts "Enter start number(numeric value):" 
   start_number = gets.chomp
 
-  #start_num = start_number.to_i
   puts "Enter end number(numeric value):"
   end_number = gets.chomp
-  #end_num = end_number.to_i
     if start_number =~ /^-?[0-9]+$/ && end_number =~ /^-?[0-9]+$/ 
       results = generate(start_number.to_i,end_number.to_i)
       if(results.length >0)
